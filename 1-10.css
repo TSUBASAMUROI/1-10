@@ -1,7 +1,7 @@
 *{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 header{
@@ -57,10 +57,34 @@ main{
 }
 
 .title{
-  height: 15px o 5px;
+  margin: 15px 0 5px;
 }
 
 footer{
-  height: 59px;
+  height: 50px;
   background-color: #AAAAAA;
+}
+
+@media screen and (max-width:768px){
+  header{
+    width: 100%;
+  }
+
+  main{
+    width: 100%;
+    display: block;
+  }
+  .step-box{
+    width: 90%;
+    margin:20px auto ;
+  }
+
+  .step-box:last-child{
+    margin: 20px auto 50px;
+  }
+
+  footer{
+    width: 100%;
+  }
+
 }
